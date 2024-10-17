@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM API</title>
+    <script src="DOM-api.js"></script>
+</head>
+<body>
+
+    <h1>DOM Manipulation Example</h1>
+    
+    <div id="ID-DOM">
+        Original content of ID-DOM.
+    </div>
+
+    <h2>I'll not show after you click the button</h2>
+    <h2>I'll show</h2>
+    
+    <p class="Class-DOM">This is a paragraph with the class 'Class-DOM'.</p>
+    
+    <a href="https://google.com" target="_blank">I'm Inevitable</a>
+
+    <div><br>
+        <button id="changeDOMButton">Change the DOM</button>
+    </div>
+    <script>
+    // Linking the button to the changeDOM function
+        document.addEventListener("DOMContentLoaded", function() {
+            let changeDOMButton = document.getElementById("changeDOMButton");
+            changeDOMButton.addEventListener("click", changeDOM);
+        });
+    </script>
+
+</body>
+</html>
+
